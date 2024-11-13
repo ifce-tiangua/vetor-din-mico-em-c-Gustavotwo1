@@ -8,11 +8,11 @@ int main(){
 
     scanf("%d", &n);
 
-    vet = (* int)malloc(n*sizeof(int));
+    vet = (int *)malloc(n*sizeof(int));
 
     for(i=0; i<n; i++){
 
-        scanf("%d", &*(vet+i));
+        scanf("%d", &vet[i]);
 
     }
     if(n==0){
@@ -26,11 +26,11 @@ int main(){
 
             if(i==n-1){
 
-                printf("%d", *(vet+i));
+                printf("%d", vet[i]);
 
             }else{
 
-                printf("%d, ", *(vet+i));
+                printf("%d, ", vet[i]);
 
             }
 
