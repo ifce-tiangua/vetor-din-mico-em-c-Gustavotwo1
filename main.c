@@ -8,7 +8,7 @@ int main(){
 
     scanf("%d", &n);
 
-    vet = (int)malloc(n*sizeof(int));
+    vet = (* int)malloc(n*sizeof(int));
 
     for(i=0; i<n; i++){
 
